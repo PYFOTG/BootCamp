@@ -79,3 +79,34 @@
         : 선언(declaration)
       (2) 버튼 사용
     
+  3-2. 함수를 선언하는 방식
+    1) 함수 선언식
+      function getTriangleArea(base, height) {
+        let triangleArea = (base * height) /2;
+        return triangleArea
+      }
+      
+    2) 함수 표현식
+      const getTriangleArea = function (base, height) {
+        let triangleArea = (base * height) /2;
+        return triangleArea
+      }
+      
+      - 변수 선언 > 익명함수 할당
+      
+    3) 화살표 함수
+      const getTriangleArea = (base, height) => {
+        let triangleArea = base * height;
+        return triangleArea;
+      }
+      
+      - ES6에서 도입된 기술임
+      - 변수 선언 > 화살표 사용 > 익명함수 할당
+      
+      - 만약 함수의 본문에 return문만 있는 경우 >> return과 {}를 생략할 수 있음
+        const getTriangleArea = (base, height) => base * height /2; // YES~🫶
+        const getTriangleArea = (base, height) => {base * height /2}; // NO!💀
+      
+      - return 문에서 소괄호를 사용할 수 있음
+        const getTriangleArea = (base, height) => (base * height /2) // YES~
+    
