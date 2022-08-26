@@ -1,0 +1,95 @@
+#Chapter1. CSS 기초
+  1-1. CSS와 프론트엔드 개발
+    1) CSS (Cascading Style Sheets)
+      - 웹 페이지 스타일 및 레이아웃을 정의하는 스타일시트 언어
+      - CSS는 스타일링 도구이므로, 독립적으로 기능하지 않음. 반드시 HTML이 있어야만 동작함
+      
+  1-2. CSS 따라하기
+    1) CSS로 기본적인 스타일링 하기
+    2) CSS 내용 분해하기
+      - css의 문법 구성:
+        셀렉터 { (선언블록 열기)
+                선언(= 속성명 속성값 선언구분자로 구성)
+                선언
+              } (선언블록 닫기)
+        body{
+              color: red;
+              font-size: 30px;
+            }
+    
+    3) CSS 파일 추가
+      - CSS 파일을 HTML 파일에 연결할 때
+        : <link rel="stylesheet" href="index.css" /> 와 같은 형태로 연결
+      
+      -✨ CSS 스타일을 적용하는 방법
+        (1) 인라인 스타일
+          : 같은 줄에서 스타일을 적용하는 방식
+          
+        (2) 내부 스타일 시트
+          : CSS파일 내에 작성하는 내용을 별도의 파일로 구분하지 않고 <style>요소 내에 작성하는 내부 스타일 시트
+          
+        (3)✨ 외부 스타일 시트
+          : <link rel="stylesheet" href="index.css" /> 와 같은 형태로 외부 .css파일과 연결하는 방식
+    
+    4)✨ 기본적인 셀렉터(selector)
+      (1) id로 이름 붙여서 스타일링 적용하기
+        - html 파일에서, 엘리먼트에 id를 붙여서 요소를 정확하게 선택 할 수 있음
+        - 그 다음 css 파일에서, id가 있는 요소를 #기호를 이용해 스타일링 함
+          ex)
+          <h4 id="navigation-title">This is the navigation section.</h4> // html
+          #navigation-title { color: red; } // css
+      
+      (2) class로 스타일을 분류하여 적용하기
+        - html 파일에서, 엘리먼트에 class를 붙여서 요소를 정확하게 선택 할 수 있음
+        - 그 다음 css 파일에서, class가 있는 요소를 .기호를 이용해 스타일링 함
+          ex)
+          <li class="menu-item">Home</li> // html
+          .menu-item { text-decoration: underline; } // css
+      
+      (3) 여러 개의 class를 하나의 엘리먼트에 적용하기
+        - 여러 class를 하나의 요소에 적용하기 : 띄어쓰기로 적용하려는 class들의 이름을 구분하면 됨
+          ex)
+          <li class="menu-item selected">Home</li> // html
+          .selected { font-weight: bold; color: #009999; } // css
+        
+        + * 요소를 만들거나, 요소에 스타일링을 적용할 때는 이름과 목적이 일치하는지 확인해야함
+        
+        
+      (*)✨ id와 class의 차이점
+        - id: #으로 선택 / class: .으로 선택
+        - id: 한 문서에 단 하나의 요소에만 적용 / class: 동일한 값을 갖는 요소 많음
+        - id: 특정 요소에 이름을 붙이는데 사용 / class: 스타일의 분류에 사용
+
+  1-3. 텍스트 꾸미기
+    1) 색상
+      - 글자의 색상을 변경하는 속성은 color
+      - 속성에 삽입할 수 있는 값은
+        (1) HEX (16진수로 RGB; Red Green Blue가 표현된 값)
+        (2) 주요 색상의 이름
+      - 글자 색상(color)이나 배경색(backfround-color), 테두리(border-color)색상도 지정 가능
+      
+    2) 글꼴
+      - 글꼴의 속성은 font-family
+      - fallback은 표현하고 싶은 글꼴이 없거나 사용할 수 없는 경우를 위한 대비책
+        fallback을 위해 여러 글꼴을 사용하는 경우, 쉼표로 구분하여 입력할 수 있음
+        입력된 순서대로 fallback이 적용됨
+        ex)
+        .emphasize {
+          font-family: "SF Pro KR", "MalgunGothic", "Verdana";
+        }
+      - 웹 폰트 기술을 통해 다양한 글꼴 사용가능
+    
+    3) 크기
+    
+    4) 기타 스타일링
+    
+    5) 정렬
+    
+    6) 태그 사용
+    
+    
+  1-4. 절대 단위와 상대 단위
+    
+#Chapter2. 박스모델
+
+#Chapter3. CSS Selector
