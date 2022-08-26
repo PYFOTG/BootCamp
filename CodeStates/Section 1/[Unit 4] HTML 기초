@@ -58,4 +58,11 @@ Chapter3. HTML 심화
   3-1. 웹 페이지의 구조잡기
   3-2. id 및 class 목적에 맞게 사용하기
     1) id
-      - 고유한 
+      - 고유한 이름을 붙일 때 사용
+      - HTML 태그 : <div id="writing-section">
+      - selector : div#writing-section
+    
+    2) class
+      - 반복되는 영역을 유형별로 분류할 때
+      - HTML 태그 : <li class="comment">
+      - selector : li.comment
