@@ -1,6 +1,14 @@
 #chapter 1. 간단한 웹앱 만들기
 1. 계산기 구현하기
-  1) 
+  - Node.textcontent
+    : https://developer.mozilla.org/ko/docs/Web/API/Node/textContent 참조
+    : https://webisfree.com/2020-03-07/[%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8]-textcontent-%EA%B7%B8%EB%A6%AC%EA%B3%A0-innertext-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0
+    : Node 인터페이스의 textContent 속성은 노드와 그 자손의 텍스트 콘텐츠를 표현함
+    
+  - '0'이 아닌 0으로 표기했더니 값이 달라짐.
+  
+  - calculate() 함수 내부 식을 Number(n1)+ Number(n2) 이런식으로 숫자값으로 변경을 해주지 않으면 문자값으로
+    인식하고 8+2 = 82 라고 주장하는 바보 계산기가 된다. 바보... 바보... 바보야....🥲
   
 2. User flow에 따라 기능 구현하기
   1) 
